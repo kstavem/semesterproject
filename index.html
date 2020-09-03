@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Community science museum with interesting exhibits and events for all ages!">
     <script src="https://kit.fontawesome.com/6b445507dd.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marko+One&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Community Science Museum</title>
 </head>
@@ -14,9 +17,79 @@
 
     <header class="nav--fixed">
         <nav class="nav">
+            <a href="index.html" class="nav__link link__logo"><img src="img/museum-logo.png" alt="museum logo"
+                    class="logo">
+                <span class="logo">csm</span></a>
+            <label for="nav-toggler" class="nav__label"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="nav-toggler">
+            <ul class="nav--toggle">
+                <li>
+                    <button class="button nav__link button__nav--sm ">Explore</button>
+                    <div class="nav--collapse">
+                        <ul>
+                            <li><a href="#" class="nav__link">For Kids</a></li>
+                            <li><a href="#" class="nav__link">Teachers</a></li>
+                            <li><a href="#" class="nav__link">Researchers</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="button nav__link button__nav--sm">Exhibits</button>
+                    <div class="nav--collapse">
+                        <ul>
+                            <li><a href="#" class="nav__link">Cosmo/Space</a></li>
+                            <li><a href="#" class="nav__link">Evolution</a></li>
+                            <li><a href="#" class="nav__link">Bio/Medicine/a></li>
+                            <li><a href="#" class="nav__link">Robotics/AI</a></li>
+                            <li><a href="#" class="nav__link">Ecology</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="button nav__link button__nav--sm">Events</button>
+                    <div class="nav--collapse">
+                        <ul>
+                            <li><a href="#" class="nav__link">"Startalk"</a></li>
+                            <li><a href="#" class="nav__link">Night at the museum</a></li>
+                            <li><a href="#" class="nav__link">Energetica Exhibit</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="button nav__link button__nav--sm">Visit</button>
+                    <div class="nav--collapse">
+                        <p>Community Science Museum</p>
+                        <p>Oppenheimer Road</p>
+                        <p>8400 Sortland</p>
+                        <ul>
+                            <li><a href="#" class="nav__link">Google Maps</a></li>
+                            <li><a href="#" class="nav__link">Accessibility</a></li>
+                            <li><a href="#" class="nav__link">COVID-19 info</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <button class="button nav__link button__nav--sm">Support</button>
+                    <div class="nav--collapse">
+                        <ul>
+                            <li><a href="#" class="nav__link">Donate</a></li>
+                            <li><a href="#" class="nav__link">Volunteer</a></li>
+                            <li><a href="#" class="nav__link">Internships</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
 
         </nav>
+
     </header>
+    <main>
+        <h1>Community <div>Science Museum</div>
+        </h1>
+    </main>
+    <script src="js/museum.js"></script>
 </body>
+
 
 </html>
