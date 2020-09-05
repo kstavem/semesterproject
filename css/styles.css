@@ -29,6 +29,10 @@ h1, h2, h3, .link {
     text-transform: uppercase;
 }
 
+.p--bold {
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,9 +42,33 @@ ul {
 }
 
 .button {
-    border: none;
-    background: none;
-    text-align: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.flex {
+    margin: 0 auto;
+    display: flex;
+}
+
+.flex__col {
+    flex-flow: column nowrap;
+}
+
+.flex__col--sm {
+    flex-flow: column nowrap;
+}
+
+.row--center {
+    justify-content: center;
+}
+
+.col--center {
+    align-items: center;
+}
+
+.w960 {
+    max-width: 960px;
 }
 
 /***** NAVIGATION *****/
@@ -63,7 +91,6 @@ header {
 .nav {
     margin: 0 auto;
     height: 100px;
-    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,6 +110,8 @@ header {
    font-size: 1.8rem;
    max-width: 500px;
    position: relative;
+   border: none;
+   background: none;
 }
 
 .button__nav--sm:after {
@@ -145,7 +174,7 @@ header {
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: cover;
-    width: 1024px;
+    width: 960px;
 }
 
 .nav__label {
@@ -168,35 +197,36 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    font-family: "Marko One", 'Times New Roman', Times, serif;
+    font-family: "Tr2n", "Marko One", Verdana, Geneva, sans-serif;
     font-size: 3rem;
+    letter-spacing: 3px;
 }
 
 /***** MAIN *****/
 
 main {
     margin: 70px auto 0 auto;
-    min-height: calc(100vh - 100px);
 }
 
 main h1 {
     text-align: center;
     padding: 30px 0 20px 0;
+    text-shadow: 2px 2px 2px #666;
+}
+
+main h2 {
+    text-align: center;
+    margin: 1rem;
+    max-width: 434px;
 }
 
 .h1-museum {
     min-width: 280px;
 }
 
-.flex-wrap {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.w960 {
-    max-width: 960px;
+.banner {
+    position: relative;
+    display: flex;  
 }
 
 .banner__image {
@@ -204,13 +234,9 @@ main h1 {
     height: auto;
 }
 
-.banner {
-    position: relative;
-}
-
 .banner__blurb {
     position: absolute;
-    top: 7%;
+    top: -1rem;
     right: 5%;
     font-size: 1rem;
     font-weight: bold;
@@ -223,7 +249,6 @@ main h1 {
     top: 8px;
     left: -2px;
     font-size: 2rem;
-    line-height: 0;
     color: #222;
 }
 
@@ -234,11 +259,42 @@ main h1 {
     top: 20px;
     left: 0px;
     font-size: 2rem;
-    line-height: 0;
     color: #222;
 }
 
+.banner a {
+    display: block;
+    padding: 1.4rem 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+    transform: translate(-60%, 0);
+    -webkit-transform: translate(-30%, 0);
+}
 
+.button--orange {
+    background-color: rgb(189, 89, 23);
+    border: 2px solid black;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #000;
+    border-radius: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.content--inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
 /***** MEDIA Q *****/
 
@@ -251,4 +307,37 @@ main h1 {
     .nav--toggle {
         top: 160px;
     }
+
+    .content {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .content--inner {
+        height: 450px;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .flex__col--sm {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        max-width: 310px;
+    }
+
+    .content--inner {
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+        padding: 1rem;
+    }
+   
 }
