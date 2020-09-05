@@ -79,18 +79,18 @@ header {
 
 .button__nav--sm {
    width: 100%;
-   padding: 1rem 0;
-   font-size: 2rem;
-   padding-left: 2em;
+   padding: 0.5rem 0;
+   font-size: 1.8rem;
    max-width: 500px;
+   position: relative;
 }
 
 .button__nav--sm:after {
     content: "\2795";
     color: #fff;
-    float: right;
     font-size: 1.2rem;
-    margin-right: 2em;
+    position: absolute;
+    right: 23%;
 }
 
 .button--accordion {
@@ -106,7 +106,6 @@ header {
 }
 
 .nav--collapse {
-    font-size: 1.5rem;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
@@ -117,7 +116,12 @@ header {
 }
 
 .nav--collapse ul {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav--collapse a {
+    display: block;
+    font-size: 1.2rem;
 }
 
 #nav-toggler {
@@ -132,17 +136,16 @@ header {
     display: none;
     list-style: none;  
     position: fixed;
-    top: 210px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
-    min-height: 450px;
+    height: 100%;
     text-align: center;
     background: url(../img/nav-bg-sm.jpg);
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: cover;
-    min-width: 1024px;
-    max-width: 1024px;
+    width: 1024px;
 }
 
 .nav__label {
@@ -172,13 +175,80 @@ header {
 /***** MAIN *****/
 
 main {
-    margin-top: 118px;
+    margin: 70px auto 0 auto;
+    min-height: calc(100vh - 100px);
 }
 
 main h1 {
     text-align: center;
+    padding: 30px 0 20px 0;
 }
 
 .h1-museum {
-    min-width: 300px;
+    min-width: 280px;
+}
+
+.flex-wrap {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.w960 {
+    max-width: 960px;
+}
+
+.banner__image {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__blurb {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner__blurb p:before {
+    content: open-quote;
+    display: inline;
+    position: relative;
+    top: 8px;
+    left: -2px;
+    font-size: 2rem;
+    line-height: 0;
+    color: #222;
+}
+
+.banner__blurb p:after {
+    content: close-quote;
+    display: inline;
+    position: relative;
+    top: 20px;
+    left: 0px;
+    font-size: 2rem;
+    line-height: 0;
+    color: #222;
+}
+
+
+
+/***** MEDIA Q *****/
+
+@media screen and (min-width: 768px) {
+
+    main h1 div {
+        display: inline-block;
+    }
+
+    .nav--toggle {
+        top: 160px;
+    }
 }
