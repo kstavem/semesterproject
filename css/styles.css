@@ -24,9 +24,17 @@ body {
     font-weight: 400;
 }
 
-h1, h2, h3, .link {
+h1, h2, h3 {
     font-family: "Marko One", 'Times New Roman', Times, serif;
     text-transform: uppercase;
+}
+
+.link {
+    text-transform: uppercase;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .p--bold {
@@ -44,6 +52,15 @@ ul {
 .button {
     padding: 1rem;
     margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.button__top {
+    background-color: #000;
+    color: #3fd6ca;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    border-radius: 1rem;
 }
 
 .flex {
@@ -69,6 +86,12 @@ ul {
 
 .w960 {
     max-width: 960px;
+}
+
+.address {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 /***** NAVIGATION *****/
@@ -165,7 +188,7 @@ header {
     display: none;
     list-style: none;  
     position: fixed;
-    top: 180px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     height: 100%;
@@ -174,7 +197,11 @@ header {
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: cover;
-    width: 960px;
+    width: 1024px;
+}
+
+.img__menu {
+    height: 80px;
 }
 
 .nav__label {
@@ -236,7 +263,7 @@ main h2 {
 
 .banner__blurb {
     position: absolute;
-    top: -1rem;
+    top: 0;
     right: 5%;
     font-size: 1rem;
     font-weight: bold;
@@ -246,9 +273,9 @@ main h2 {
     content: open-quote;
     display: inline;
     position: relative;
-    top: 8px;
+    top: 0;
     left: -2px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #222;
 }
 
@@ -258,7 +285,7 @@ main h2 {
     position: relative;
     top: 20px;
     left: 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #222;
 }
 
@@ -296,6 +323,39 @@ main h2 {
     padding: 1rem;
 }
 
+/***** FOOTER *****/
+
+footer {
+    margin: 30px auto 0 auto;
+    padding: 2rem 0;
+    background-color: rgb(220, 220, 255);
+}
+
+footer h3 {
+    margin-bottom: .2rem;
+}
+
+footer i {
+    margin-right: .3rem;
+}
+
+footer .link {
+    font-size: 1.2rem;
+}
+
+footer .flex__col--sm {
+    justify-content: flex-start;    
+}
+
+.content__footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 300px;
+    margin: 0 auto;
+}
+
 /***** MEDIA Q *****/
 
 @media screen and (min-width: 768px) {
@@ -304,19 +364,54 @@ main h2 {
         display: inline-block;
     }
 
-    .nav--toggle {
-        top: 160px;
+    .banner__blurb {
+        top: 5%;
+        right: 8%;
     }
 
+    .blurb {
+        font-size: 1.8rem;
+    }
+
+    .banner__blurb p:before {
+        top: -5px;
+        font-size: 2rem;
+    }
+
+    .banner__blurb p::after {
+        font-size: 2rem;
+        top: 25px;
+    }
+
+    .banner a {
+        left: 80%;
+    }
+
+    .banner .button--orange {
+        font-size: 1.6rem;
+        border-radius: 15%;
+        padding: 2.5rem;
+    }
+
+    main p {
+        font-size: 1.1rem;
+    }
     .content {
         flex-direction: row;
         max-width: 600px;
     }
 
     .content--inner {
-        height: 450px;
+        min-height: 380px;
         padding: 0 1rem;
+        justify-content: space-around;
     }
+
+    footer .flex__col--sm {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -341,3 +436,63 @@ main h2 {
     }
    
 }
+
+@media screen and (min-width: 1025px) {
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .nav__label {
+        display: none;
+    }
+
+    .nav--toggle {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        background: none;
+        padding-top: 0;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;   
+    }
+
+    .nav--toggle li {
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+
+    .nav--collapse a {
+       padding: .5rem;
+    }
+
+    .button__nav--sm {
+        font-size: 1.4rem;
+    }
+
+    #li--remove {
+        display: none;
+    }
+
+    .button__nav--sm:after {
+        content: none;
+    }
+
+    .button--accordion:after {
+        content: none;
+    }
+
+    .nav--collapse {
+        position: absolute;
+        background-color: #000;
+    }
+
+    .nav--collapse ul, .nav--collapse p {
+        padding: 1rem 0;
+        min-width: 250px;
+    }
+

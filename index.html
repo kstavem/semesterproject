@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header class="nav--fixed">
         <nav class="nav w960">
             <a href="index.html" class="nav__link link__logo"><img src="img/museum-logo.png" alt="museum logo"
@@ -27,9 +26,9 @@
                     <button class="nav__link button__nav--sm ">Explore</button>
                     <div class="nav--collapse">
                         <ul>
-                            <li><a href="#" class="nav__link">For Kids</a></li>
-                            <li><a href="#" class="nav__link">Teachers</a></li>
-                            <li><a href="#" class="nav__link">Researchers</a></li>
+                            <li><a href="#" class="link nav__link">For Kids</a></li>
+                            <li><a href="#" class="link nav__link">Teachers</a></li>
+                            <li><a href="#" class="link nav__link">Researchers</a></li>
                         </ul>
                     </div>
                 </li>
@@ -37,11 +36,11 @@
                     <button class="nav__link button__nav--sm">Exhibits</button>
                     <div class="nav--collapse">
                         <ul>
-                            <li><a href="#" class="nav__link">Cosmo/Space</a></li>
-                            <li><a href="#" class="nav__link">Evolution</a></li>
-                            <li><a href="#" class="nav__link">Bio/Medicine</a></li>
-                            <li><a href="#" class="nav__link">Robotics/AI</a></li>
-                            <li><a href="#" class="nav__link">Ecology</a></li>
+                            <li><a href="#" class="link nav__link">Cosmo/Space</a></li>
+                            <li><a href="#" class="link nav__link">Evolution</a></li>
+                            <li><a href="#" class="link nav__link">Bio/Medicine</a></li>
+                            <li><a href="#" class="link nav__link">Robotics/AI</a></li>
+                            <li><a href="#" class="link nav__link">Ecology</a></li>
                         </ul>
                     </div>
                 </li>
@@ -49,22 +48,22 @@
                     <button class="nav__link button__nav--sm">Events</button>
                     <div class="nav--collapse">
                         <ul>
-                            <li><a href="#" class="nav__link">"Startalk"</a></li>
-                            <li><a href="#" class="nav__link">Night at the museum</a></li>
-                            <li><a href="#" class="nav__link">Energetica Exhibit</a></li>
+                            <li><a href="#" class="link nav__link">"Startalk"</a></li>
+                            <li><a href="#" class="link nav__link">Night at the museum</a></li>
+                            <li><a href="#" class="link nav__link">Energetica Exhibit</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <button class="nav__link button__nav--sm">Visit</button>
                     <div class="nav--collapse">
-                        <p>Community Science Museum</p>
-                        <p>Oppenheimer Road</p>
-                        <p>8400 Sortland</p>
+                        <p class="address">CSM<br>
+                            Oppenheimer Road 42<br>
+                            8400 Sortland</p>
                         <ul>
-                            <li><a href="#" class="nav__link">Google Maps</a></li>
-                            <li><a href="#" class="nav__link">Accessibility</a></li>
-                            <li><a href="#" class="nav__link">COVID-19 info</a></li>
+                            <li><a href="#" class="link nav__link">Google Maps</a></li>
+                            <li><a href="#" class="link nav__link">Accessibility</a></li>
+                            <li><a href="#" class="link nav__link">COVID-19 info</a></li>
                         </ul>
                     </div>
                 </li>
@@ -73,11 +72,14 @@
                     <button class="nav__link button__nav--sm">Support</button>
                     <div class="nav--collapse">
                         <ul>
-                            <li><a href="#" class="nav__link">Donate</a></li>
-                            <li><a href="#" class="nav__link">Volunteer</a></li>
-                            <li><a href="#" class="nav__link">Internships</a></li>
+                            <li><a href="#" class="link nav__link">Donate</a></li>
+                            <li><a href="#" class="link nav__link">Volunteer</a></li>
+                            <li><a href="#" class="link nav__link">Internships</a></li>
                         </ul>
                     </div>
+                </li>
+                <li id="li--remove">
+                    <img src="img/museum-logo.png" class="img__menu" alt="CSM Icon">
                 </li>
             </ul>
         </nav>
@@ -89,19 +91,20 @@
             </h1>
             <div class="banner">
                 <div class="banner__blurb">
-                    <p>Explore together!</p>
+                    <p class="blurb">Explore together!</p>
                 </div>
                 <a href="#" class="link button--orange">Tickets</a>
                 <img class="banner__image" src="img/banner2-sm.jpg" alt="Picture outside museum">
             </div>
-            <h2>Join us at the Community Science Museum where we’re committed to making science
+            <h2>Join us at the Community Science Museum, where we’re committed to making science
                 accessible to all.</h2>
         </div>
         <div class="w960 flex flex__col flex__col--sm col--center">
             <div class="content">
                 <img src="img/fp-explore.jpg" alt="science kids toy">
                 <div class="content--inner">
-                    <p>At CSM we've got interesting opportunities for all ages. Wheter you're a kid, a teacher or an
+                    <p>At CSM we've got interesting opportunities for all ages. Wheter you're a student, a teacher
+                        or an
                         experienced researcher, we welcome you to explore our museum!</p>
                     <a href="#" class="link"><button class="button button--orange">Explore</button></a>
                 </div>
@@ -109,9 +112,12 @@
             <div class="content">
                 <img src="img/fp-exhibit.jpg" alt="whale skeleton">
                 <div class="content--inner">
-                    <p>The museum has over 1000 different exhibits on the many varied subjects of science to explore.
-                        Many of these exhibits are designed for you to interact with and play around to see science come
-                        to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone
+                    <p>The museum has over 1000 different exhibits on the many varied subjects of science to
+                        explore.
+                        Many of these exhibits are designed for you to interact with and play around to see science
+                        come
+                        to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s
+                        gone
                         home).</p>
                     <a href="#" class="link"><button class="button button--orange">Exhibits</button></a>
                 </div>
@@ -120,16 +126,45 @@
                 <img src="img/fp-events.jpg" alt="teenager painting with WR-goggles equipped">
                 <div class="content--inner">
                     <p>CSM often hosts visiting exhibits as well as live scientist lectures on various topics. This
-                        month we're hosting a live version of "StarTalk" with astrophysicist dr. Neil deGrasse Tyson!
+                        month we're hosting a live version of "StarTalk" with astrophysicist dr. Neil deGrasse
+                        Tyson!
                     </p>
                     <a href="#" class="link"><button class="button button--orange">Events</button></a>
                 </div>
             </div>
         </div>
-
-
+        <div class="w960 flex">
+            <button class="button link button__top" id="top">Back to top</button>
+        </div>
 
     </main>
+    <footer>
+        <div class="w960 flex flex__col--sm">
+            <div class="content__footer">
+                <h3>Visit</h3>
+                <p class="address">ComSci Museum<br>
+                    Oppenheimer Road 42<br>
+                    8400 Sortland</p>
+                <a href="#" class="link">Google maps</a>
+                <a href="#" class="link">Accessibility</a>
+                <a href="#" class="link">COVID-19 information</a>
+            </div>
+            <div class="content__footer">
+                <h3>Get involved</h3>
+                <a href="#" class="link">Support</a>
+                <a href="#" class="link">Volunteer</a>
+                <a href="#" class="link">Internships</a>
+            </div>
+            <div class="content__footer">
+                <h3>Social Media</h3>
+                <a href="https://www.facebook.com" class="link"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://www.twitter.com" class="link"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com" class="link"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="js/museum.js"></script>
 </body>
 
