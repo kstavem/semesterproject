@@ -63,6 +63,10 @@ ul {
     border-radius: 1rem;
 }
 
+.image--rad {
+    border-radius: 3%;
+}
+
 .flex {
     margin: 0 auto;
     display: flex;
@@ -86,6 +90,10 @@ ul {
 
 .w960 {
     max-width: 960px;
+}
+
+.pb-1 {
+    padding-bottom: .8rem;
 }
 
 .address {
@@ -241,14 +249,14 @@ main h1 {
     text-shadow: 2px 2px 2px #666;
 }
 
+h1 span {
+    display: block;
+}
+
 main h2 {
     text-align: center;
     margin: 1rem;
     max-width: 434px;
-}
-
-.h1-museum {
-    min-width: 280px;
 }
 
 .banner {
@@ -296,7 +304,6 @@ main h2 {
     bottom: 10px;
     left: 60%;
     transform: translate(-60%, 0);
-    -webkit-transform: translate(-30%, 0);
 }
 
 .button--orange {
@@ -307,6 +314,12 @@ main h2 {
     letter-spacing: 1px;
     text-shadow: 2px 2px 2px #000;
     border-radius: 10%;
+    text-align: center;
+}
+
+.button--orange:hover {
+    background-color: rgb(138, 12, 12);
+    transition: background-color 0.35s ease;
 }
 
 .content {
@@ -321,6 +334,10 @@ main h2 {
     flex-flow: column;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.content .button--orange {
+    max-width: 150px;
 }
 
 /***** FOOTER *****/
@@ -356,11 +373,23 @@ footer .flex__col--sm {
     margin: 0 auto;
 }
 
+.weekday {
+    display: inline-block;
+    min-width: 55px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
 /***** MEDIA Q *****/
 
 @media screen and (min-width: 768px) {
 
-    main h1 div {
+    main h1 span {
         display: inline-block;
     }
 
@@ -463,15 +492,20 @@ footer .flex__col--sm {
 
     .nav--toggle li {
         flex: 1;
-        margin-bottom: 1rem;
-    }
-
-    .nav--collapse a {
-       padding: .5rem;
+        height: 100%;
     }
 
     .button__nav--sm {
         font-size: 1.4rem;
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .button__nav--sm:hover, .button__nav--sm:focus {
+        background-color: rgb(0, 0, 0, 0.8);
+        transition: background-color .6s ease;
     }
 
     #li--remove {
@@ -488,11 +522,51 @@ footer .flex__col--sm {
 
     .nav--collapse {
         position: absolute;
-        background-color: #000;
+        width: 250px;
+        background: #fff;
+        left: -50px;
     }
 
-    .nav--collapse ul, .nav--collapse p {
-        padding: 1rem 0;
-        min-width: 250px;
+    .nav--toggle > li:nth-of-type(2) > .nav--collapse {
+        left: 100px;
     }
+
+    .nav--toggle > li:nth-of-type(3) > .nav--collapse {
+        left: 250px;
+    }
+
+    .nav--toggle > li:nth-of-type(4) > .nav--collapse {
+        left: 400px;
+    }
+
+    .nav--toggle > li:nth-of-type(5) > .nav--collapse {
+        left: 550px;
+        width: 230px;
+    }
+
+    .nav--collapse ul {
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    .nav--collapse > ul > li:nth-of-type(2n) {
+        background-color: rgb(220, 220, 255);
+    }
+
+    .nav--collapse a {
+        padding: 1rem;
+        color: #000;
+     }
+
+    .nav--collapse a:hover, .nav--collapse a:focus {
+        background-color: #000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav--collapse p {
+        padding: 1rem 0;
+        color: #000;
+    }
+}
 

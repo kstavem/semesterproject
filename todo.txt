@@ -1,0 +1,11 @@
+Steps:
+creating views (remember "../" for css/js/img).
+    -Explore
+    -Exhibits
+    -Events
+    -Visit
+    -Support
+
+
+
+report
