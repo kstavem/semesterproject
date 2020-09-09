@@ -1,12 +1,4 @@
-Steps:
-creating views (remember "../" for css/js/img).
-    -Explore
-    -Exhibits
-    -Events
-    -Visit
-    -Support
-
-
+design views
 
     explore: #kids . #teacher . #research
     exhibit: #cosmo . #evo . #bio . #robo . #eco
