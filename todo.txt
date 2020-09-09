@@ -8,4 +8,10 @@ creating views (remember "../" for css/js/img).
 
 
 
+    explore: #kids . #teacher . #research
+    exhibit: #cosmo . #evo . #bio . #robo . #eco
+    events: #startalk . #natm . #energetica
+    visit: #map . #access . #tickets . #covid
+    support: #donate . #volunteer . #intern
+
 report

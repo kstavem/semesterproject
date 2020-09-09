@@ -11,6 +11,7 @@ for (i = 0; i < accordion.length; i++) {
         } else {
             onlyOne();
             this.classList.toggle("button--accordion");
+            this.parentElement.classList.toggle("nav--alpha");
             var collapse = this.nextElementSibling;
             if (collapse.style.maxHeight) {
                 collapse.style.maxHeight = null;
@@ -44,11 +45,25 @@ topBtn.addEventListener("click", function () {
 
 // Close menu on window resize
 var toggleBox = document.getElementById("nav-toggler");
+function unCheck() {
+    if (toggleBox.checked = true) {
+        toggleBox.click()
+    };
+};
+
 window.addEventListener("resize", function () {
     onlyOne();
-    if (toggleBox.checked = true) {
-        toggleBox.click();
-    };
+    unCheck();
 });
 
-
+//Close menu on smaller devices when clicking an HTML bookmark (didn't work with ClassName, so made 2x id's)
+var close = document.getElementById("close");
+var close2 = document.getElementById("close2");
+close.addEventListener("click", function () {
+    onlyOne();
+    unCheck();
+});
+close2.addEventListener("click", function () {
+    onlyOne();
+    unCheck();
+});
