@@ -43,7 +43,7 @@ topBtn.addEventListener("click", function () {
 });
 
 
-// Close menu on window resize
+// Close menu on window resize and non-menu click
 var toggleBox = document.getElementById("nav-toggler");
 function unCheck() {
     if (toggleBox.checked = true) {
