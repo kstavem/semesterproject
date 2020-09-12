@@ -463,9 +463,14 @@ footer .flex__col--sm {
     height: 200px;
 }
 
+#view_explore h2 {
+    text-align: center;
+}
+
 #explore p {
     max-width: 300px;
 }
+
 
 .content__explore {
     display: flex;
@@ -656,6 +661,10 @@ iframe {
 
     #landing .content--inner {
         height: 300px;
+    }
+
+    #view_explore h2 {
+        text-align: left;
     }
 
     #eco {
