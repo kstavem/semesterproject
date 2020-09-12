@@ -502,6 +502,10 @@ iframe {
     max-width: 300px;
 }
 
+#support i {
+    margin-right: 3px;
+}
+
 /***** MEDIA Q *****/
 
 @media screen and (max-width: 767px) {
@@ -665,6 +669,10 @@ iframe {
     #covid {
         width: 100%;
         justify-content: flex-start;
+    }
+
+    #support a {
+        display: block;
     }
 }
 
