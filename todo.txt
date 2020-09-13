@@ -1,9 +1,6 @@
-design views
 
-    explore: #kids . #teacher . #research
-    exhibit: #cosmo . #evo . #bio . #robo . #eco
-    events: #startalk . #natm . #energetica
-    visit: #map . #access . #tickets . #covid
-    support: #donate . #volunteer . #intern
 
-report
+1025px+  remove black bg hover effect on menu
+
+
+Report

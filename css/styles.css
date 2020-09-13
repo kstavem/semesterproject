@@ -724,8 +724,7 @@ iframe {
 
     .button__nav--sm:hover, .button__nav--sm:focus {
         text-decoration: underline;
-        background-color: rgba(0, 0, 0, 0.8);
-        transition: background-color .2s ease;
+        color: #fff;    
     }
 
     #li--remove {
