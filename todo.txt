@@ -1,6 +1,0 @@
-
-
-1025px+  remove black bg hover effect on menu
-
-
-Report
